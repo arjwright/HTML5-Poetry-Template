@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="Author" content="Antoine RJ Wright" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+	<title>TITLE OF POETRY COLLECTION</title>
+	<link rel="stylesheet" type="text/css" href="arjw-poetry.css" />
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<header>
+	<h1><a href="poetry-template.html" title="TITLE OF POETRY COLLECTION">TITLE OF POETRY COLLECTION</a></h1>
+	<details class="book-description">
+		<summary>Collection of prose and images</summary>
+	</details>
+	<nav class="controls">
+		<p><a class="show-all" title="Click to show all poems">Show All Poems</a> | <a class="hide-all" title="Click to hide all poems">Hide All Poems</a></p>
+		<script>$('a.show-all').click(function () {$('details.poem-body').show("fast");});</script>
+		<script>$('a.hide-all').click(function () {$('details.poem-body').hide("fast");});</script>
+	</nav>
+</header>
+
+<!-- template code for each poem entry -->
+<section class="poem-container">
+	<h2 class="ptitle" id="poem-title" title="{poem title}">{poem title}</h2>
+	<details class="poem-body poem-title">
+		<summary class="description">
+			Lorem ipsum dolor sit amet, <br />
+			consectetur adipiscing elit.  <br />
+			Curabitur a nulla eu velit feugiat laoreet sed quis dui.  <br />
+			Maecenas auctor diam a velit luctus et blandit libero feugiat.  <br />
+			Aliquam erat volutpat.  <br />
+			Vivamus sagittis vulputate dolor,  <br />
+			vel consectetur justo dictum ac.  <br />
+			Nulla ac ultrices ligula.  <br />
+			Aliquam quis ipsum vitae urna bibendum cursus at sed metus.  <br />
+			Vestibulum consequat, neque non iaculis ornare,  <br />
+			ante orci tincidunt sem, vel tempus nibh mi vel justo.  <br />
+			In tincidunt vestibulum purus nec posuere.  <br />
+			Phasellus gravida justo eget sem laoreet congue.  <br />
+			Nulla ullamcorper nisi vel sem dictum congue. <br />
+			Sed tempor,  <br />
+			mauris ut fringilla laoreet,  <br />
+			arcu eros posuere elit,  <br />
+			sit amet fringilla felis neque et mi.
+		</summary>
+		<p>
+			asdsadsadsad
+		</p>
+		<time class="date_duration"><abbr class="dtend" title="2011-05-14, 12:00:00 T">2011-05-14</abbr></time>
+		<article class="assoc-url">
+			<ul>
+				<li><a href="" class="url">adsadasd</a></li>
+			</ul>
+		</article>
+	</details>
+	<script>$('#poem-title').click(function () {$('details.poem-title').toggleClass('poem-body-show, poem-body');$('#poem-title').toggleClass('active');});</script>
+	<script>$('.close-poem-title').click(function () {$('details.poem-title').hide("fast");$('#poem-title').toggleClass('active');});</script>
+</section>
+
+<!-- template section for each picture entry -->
+<section class="poem-container">
+	<h2 class="ptitle" id="image-id" title="[Title of Your Image]">[Title of Your Image]</h2>
+	<details class="poem-body image-id">
+		<summary class="description">
+			<img src="#"  title="capion or description of image" alt="description of image" width="100" height="100" />
+		</summary>
+		<p>
+			asdasadasdasda
+		</p>
+		<time class="date_duration"><abbr class="dtend" title="2011-05-01, 12:00:00 T">2011-05-01</abbr></time>
+		<article class="assoc-url">
+			<ul>
+				<li><a href="">[Title of Your Image] - Points to Online Source for Image</a></li>
+			</ul>
+		</article>
+	</details>
+	<script>$('#image-id').click(function () {$('details.image-id').toggleClass('poem-body-show, poem-body');$('#image-id').toggleClass('active');});</script>
+	<script>$('.close-image-id').click(function () {$('details.image-id').hide("fast");$('#image-id').toggleClass('active');});</script>
+</section>
+
+
+<footer>
+	<p>This document was created after viewing a similar implementation on <a href="http://scripting.com">Scripting.com</a>; implemented via <a href="http://jquery.com">jQuery</a> and <a href="http://dev.w3.org/html5/html4-differences/">HMTL5</a>.</p>
+	<p><a href="http://arjw.wordpress.com/2010/08/24/elephants-a-redesign-of-my-poetry-journals/">Design Notes</a> | All content here is produced by Antoine RJ Wright; links may point to content owned elsewhere. | <a href="http://contact.antoinerjwright.com" rel="author">Contact</a></p>
+</footer>
+</body>
+</html>
